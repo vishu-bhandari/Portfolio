@@ -5,6 +5,8 @@ import Intro from "./Intro";
 import Experience from "./Experience";
 import Project from "./Project";
 import Course from "./Course";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
           <Experience/>
           <Project/>
           <Course/>
+          <Contact/>
+          <Footer/>
         </div>
       </div>
     </>
