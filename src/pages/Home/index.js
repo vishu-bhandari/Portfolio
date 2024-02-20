@@ -7,6 +7,7 @@ import Project from "./Project";
 import Course from "./Course";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import LeftSider from "./LeftSider";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
           <Course/>
           <Contact/>
           <Footer/>
+          <LeftSider/>
         </div>
       </div>
     </>
