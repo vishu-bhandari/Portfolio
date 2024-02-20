@@ -1,25 +1,18 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
-
+import { useSelector } from 'react-redux';
 function About() {
-    const skills=[
-        "Javascript",
-        "Node",
-        "React",
-        "Mongodb",
-        "Express",
-        "Firebase",
-        "Redux & Axios"
-
-
-    ]
+  const {loading,portfolioData} = useSelector((state)=>state.root);
+  const {about}=portfolioData;
+  const {skills,lottieURL, description1,description2}=about;
+   
   return (
     <>
       <SectionTitle title="About" />
       <div className="flex w-full items-center sm:flex-col flex-row ">
         <div className="h-[60vh] w-1/2 sm:w-full ">
           <dotlottie-player
-            src="https://lottie.host/ebffcb1a-698c-4ecc-96fe-1881cafa0508/VNE9inOpq7.json"
+            src={lottieURL}
             background="transparent"
             speed="1"
             autoplay
@@ -28,18 +21,10 @@ function About() {
         </div>
         <div className="flex flex-col gap-5 w-1/2 sm:w-full text-md  font-light">
           <p className="text-white">
-            I'm Vishu Bhandari, a dedicated web developer specializing in
-            dynamic websites with the latest frameworks. With expertise in
-            crafting engaging user experiences and leveraging cutting-edge
-            technologies, I create bespoke solutions tailored to meet your
-            business needs. Explore my portfolio to see how I can elevate your
-            online presence through strategic web development.
+           {description1 || ''}
           </p>
           <p className="text-white">
-            I am proficient in Node.js, Express.js, MongoDB, Redux, and more.
-            With expertise in API development, real-time communication, and
-            secure authentication, I deliver robust web solutions. Explore my
-            portfolio for innovative projects showcasing my versatile skill set.
+           {description2 || ''}
           </p>
         </div>
       </div>

@@ -42,10 +42,11 @@
         opacity: 0.5;
     }
 }
-.p{
-    animation:p  1s infinite;
+
+.pa{
+    animation: pa 1s infinite;
 }
-@keyframes p{
+@keyframes pa{
     0%{
        opacity: 0.5;
     }
@@ -53,6 +54,6 @@
         opacity: 0.5;
     }
     100%{
-        opacity: 1;
+        opacity: 2;
     }
 }
