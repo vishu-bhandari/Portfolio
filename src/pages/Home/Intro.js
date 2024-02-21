@@ -18,7 +18,10 @@ function Intro() {
           {description || ''}
             
            </p>
+           <a href="./Demo.js">
            <button className='border-2 border-tertiary text-tertiary px-10 py-3 sm:px-5 sm:py-2 rounded-md'>Get Started</button>
+           </a>
+         
         </div>
     </>
   )

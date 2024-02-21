@@ -28,6 +28,21 @@
     }
 }
 
+
+.p{
+    animation: p 1s infinite;
+}
+@keyframes p{
+    0%{
+       opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .b{
     animation: b 1s infinite;
 }
@@ -43,17 +58,26 @@
     }
 }
 
-.pa{
-    animation: pa 1s infinite;
+.header h1{
+    margin: 0 !important;
+    padding: 0 !important;
 }
-@keyframes pa{
-    0%{
-       opacity: 0.5;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 2;
-    }
+
+
+
+/* input */
+
+input,textarea{
+    height: 40px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left:20px;
+    
+}
+input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+textarea{
+    height: 100px;
 }
