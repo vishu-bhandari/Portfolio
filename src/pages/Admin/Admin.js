@@ -4,6 +4,9 @@ import { Tabs } from 'antd';
 import AdminIntro from './AdminIntro';
 import AdminAbout from './AdminAbout';
 import { useSelector } from 'react-redux';
+import AdminExp from './AdminExp';
+import AdminProjects from './AdminProjects';
+import AdminCourses from './AdminCourses';
 // import type { TabsProps } from 'antd';
 const { TabPane } = Tabs;
 
@@ -20,6 +23,15 @@ function Admin() {
           </TabPane>
           <TabPane tab="About" key="2">
             <AdminAbout/>
+          </TabPane>
+          <TabPane tab="Experience" key="3">
+           <AdminExp/>
+          </TabPane>
+          <TabPane tab="Projects" key="4">
+          <AdminProjects/>
+          </TabPane>
+          <TabPane tab="Courses" key="5">
+          <AdminCourses/>
           </TabPane>
 
         </Tabs>

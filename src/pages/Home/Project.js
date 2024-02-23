@@ -50,10 +50,7 @@ function Project() {
             <h1 className="text-tertiary text-2xl flex">
               {projects[selectedItemIndex].description}
             </h1>
-            <p className="text-white text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At,
-              saepe!
-            </p>
+           
             <h1 className="text-white text-lg flex">
               {projects[selectedItemIndex].technologies}
             </h1>
